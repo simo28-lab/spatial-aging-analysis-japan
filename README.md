@@ -45,4 +45,4 @@ Standard linear models (OLS) were rejected in favor of models that internalize "
 * **Targeted Growth:** Identified that dense urban areas maintain younger populations, while high-aging targets are localized in regions with specific morphological constraints.
 
 ---
-*Developed for Data Science Portfolio - Focus on Spatial Statistics & Demographic Modeling.*
+
