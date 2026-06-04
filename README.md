@@ -97,11 +97,19 @@ Standard linear models (OLS) were rejected in favor of architectures that intern
 ---
 
 ## ✅ Model Diagnostics
+To validate that the Spatial Durbin Model successfully extracted all spatial signals from the data, the model residuals were audited using both geographic and feature-space diagnostic checks.
 
-![Residual Map](outputs/maps/04_sdm_residuals.png)
+<p align="center">
+  <img src="outputs/maps/04_sdm_residuals.png" width="50%" alt="Spatial Durbin Model Residuals Map">
+  <br>
+  <em>Figure 1: Geographic Distribution of Model Residuals (Testing for spatial homogeneity)</em>
+</p>
 
-![Residual Moran](outputs/figures/02_residual_moran.png)
-
+<p align="center">
+  <img src="outputs/figures/02_residual_moran.png" width="50%" alt="Residual Moran Scatterplot">
+  <br>
+  <em>Figure 2: Residual Moran Scatterplot (Confirming zero spatial autocorrelation in error terms)</em>
+</p>
 Residual Moran's I was not statistically significant (p = 0.638), indicating that the SDM successfully captured spatial dependence.
 
 
