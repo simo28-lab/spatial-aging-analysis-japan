@@ -44,7 +44,7 @@ A robust spatial infrastructure was built to account for Japan's unique physical
       <img src="outputs/maps/01_aging_choropleth.png" width="520">
     </td>
     <td align="center">
-      <b>Population Density</b><br>
+      <b>LISA map</b><br>
       <img src="outputs/maps/03_lisa_map.png" width="520">
     </td>
   </tr>
