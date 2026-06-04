@@ -31,7 +31,7 @@ The project follows a modular, production-ready directory layout designed for re
 │   ├── processed/
 │   │   ├── dataset spatial_final.xlsx
 │   │   ├── gadm41_JPN_1.prj
-│   │   ├── gadm41_JPN_1
+│   │   ├── gadm41_JPN_1.dbf
 │   │   ├── gadm41_JPN_1.shx   
 │   │   └── gadm41_JPN_1.shp        
 │   └── raw/
