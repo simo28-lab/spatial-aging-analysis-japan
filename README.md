@@ -27,7 +27,7 @@ A robust spatial infrastructure was built to account for Japan's unique physical
   > Note: Raw DEM raster files and intermediate GIS processing outputs are not included in this repository due to file size limitations. The final processed visualization is provided below.
   ### Terrain Morphology of Japan
 
-![Morphology Map](outputs/maps/morphology_qgis.png)
+![Morphology Map](outputs/maps/morphology_japan.png)
 
 ### 2. Exploratory Spatial Data Analysis (ESDA)
 * **Cluster Identification:** Confirmed significant regional clustering with a **Moran’s I of 0.398** ($p < 0.001$).
