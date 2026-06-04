@@ -45,7 +45,7 @@ A robust spatial infrastructure was built to account for Japan's unique physical
     </td>
     <td align="center">
       <b>Population Density</b><br>
-      <img src="outputs/maps/02_density_map.png" width="520">
+      <img src="outputs/maps/03_lisa_map.png" width="520">
     </td>
   </tr>
 </table>
@@ -60,6 +60,9 @@ A robust spatial infrastructure was built to account for Japan's unique physical
 <p align="center">
 <b>Moran's I = 0.398 (p &lt; 0.001)</b> indicating significant positive spatial autocorrelation across Japanese prefectures.
 </p>
+
+
+
 ### 3. Advanced Predictive Modeling
 Standard linear models (OLS) were rejected in favor of models that internalize "Geography" as a variable:
 * **Model Selection:** Evaluated SAR and SEM architectures against the **Spatial Durbin Model (SDM)** using **AIC** and **Likelihood Ratio (LR) tests**.
