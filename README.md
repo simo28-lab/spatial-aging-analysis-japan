@@ -93,9 +93,18 @@ Standard linear models (OLS) were rejected in favor of architectures that intern
 | **University Density** | +0.131 | +2.853 | +2.984 | Not Signif. at 95% |
 | **Hospital Availability** | +0.056 | -0.123 | -0.067 | Not Signif. at 95% |
 
-> 💡 **Hiring Team Note (QA/Data Integrity Insight):** Statistical significance flags are programmatically assigned by checking if the simulated empirical distribution bounds ($2.5\%$ and $97.5\%$ quantiles) contain zero. If the interval crosses zero, the effect is flagged as *Not Significant*, mitigating false-positive risk across our automated geospatial estimation pipelines.
 
 ---
+
+## ✅ Model Diagnostics
+
+![Residual Map](outputs/maps/04_sdm_residuals.png)
+
+![Residual Moran](outputs/figures/02_residual_moran.png)
+
+Residual Moran's I was not statistically significant (p = 0.638), indicating that the SDM successfully captured spatial dependence.
+
+
 
 ## 📈 Potential Business Impact
 * **Unbiased Decision Making:** The final model captured all spatial dependencies, with residuals showing **zero remaining autocorrelation** ($p = 0.638$).
