@@ -38,6 +38,31 @@ A robust spatial infrastructure was built to account for Japan's unique physical
 * **Hotspot Mapping (LISA):** Pinpointed statistically significant **High-High clusters** of aging and **Low-Low "Youth Hubs"** (e.g., the Tokyo metropolitan area).
 * **Diagnostic Rigor:** Validated local dependencies using **Geary’s C** ($0.606$) to ensure the patterns weren't mere statistical anomalies.
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <b>Spatial Distribution of Aging Population</b><br><br>
+      <img src="outputs/maps/01_aging_choropleth.png" width="300">
+    </td>
+    <td align="center">
+      <b>Global Spatial Autocorrelation</b><br><br>
+      <img src="outputs/figures/01_moran_scatter.png" width="300">
+    </td>
+    <td align="center">
+      <b>Local Spatial Clusters (LISA)</b><br><br>
+      <img src="outputs/maps/03_lisa_map.png" width="300">
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+<b>Moran's I = 0.398 (p &lt; 0.001)</b>, confirming statistically significant spatial clustering across Japanese prefectures.
+</p>
+
+
+
+
+
 ### 3. Advanced Predictive Modeling
 Standard linear models (OLS) were rejected in favor of models that internalize "Geography" as a variable:
 * **Model Selection:** Evaluated SAR and SEM architectures against the **Spatial Durbin Model (SDM)** using **AIC** and **Likelihood Ratio (LR) tests**.
