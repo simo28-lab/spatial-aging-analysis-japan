@@ -42,15 +42,15 @@ A robust spatial infrastructure was built to account for Japan's unique physical
   <tr>
     <td align="center">
       <b>Spatial Distribution of Aging Population</b><br><br>
-      <img src="outputs/maps/01_aging_choropleth.png" width="300">
+      <img src="outputs/maps/01_aging_choropleth.png" width="400">
     </td>
     <td align="center">
       <b>Global Spatial Autocorrelation</b><br><br>
-      <img src="outputs/figures/01_moran_scatter.png" width="300">
+      <img src="outputs/figures/01_moran_scatter.png" width="400">
     </td>
     <td align="center">
       <b>Local Spatial Clusters (LISA)</b><br><br>
-      <img src="outputs/maps/03_lisa_map.png" width="300">
+      <img src="outputs/maps/03_lisa_map.png" width="400">
     </td>
   </tr>
 </table>
@@ -58,8 +58,6 @@ A robust spatial infrastructure was built to account for Japan's unique physical
 <p align="center">
 <b>Moran's I = 0.398 (p &lt; 0.001)</b>, confirming statistically significant spatial clustering across Japanese prefectures.
 </p>
-
-
 
 
 
