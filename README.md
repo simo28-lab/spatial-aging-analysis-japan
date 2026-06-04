@@ -110,7 +110,7 @@ To validate that the Spatial Durbin Model successfully extracted all spatial sig
   <br>
   <em>Figure 2: Residual Moran Scatterplot (Confirming zero spatial autocorrelation in error terms)</em>
 </p>
-Residual Moran's I was not statistically significant (p = 0.638), indicating that the SDM successfully captured spatial dependence.
+
 
 
 
