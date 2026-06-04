@@ -26,7 +26,8 @@ A robust spatial infrastructure was built to account for Japan's unique physical
 * **Contiguity Modeling:** Structured a precise **Spatial Weight Matrix (W)**, focusing on mainland connectivity to eliminate noise from isolated island geographies.
   
   > Note: Raw DEM raster files and intermediate GIS processing outputs are not included in this repository due to file size limitations. The final processed visualization is provided below.
-                                                        ### Terrain Morphology of Japan
+
+    <h3 align="center">Terrain Morphology of Japan</h3>
 
 <p align="center">
   <img src="outputs/maps/morphology_japan.png" width="500">
