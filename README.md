@@ -16,6 +16,30 @@ By moving beyond standard OLS regression to **Spatial Econometric Modeling (SDM)
 * **Data Sources:** e-Stat Japan (2019) and GADM Level 1 Shapefiles.
 
 ---
+## 📁 Repository Structure
+project/
+│
+├── data/
+│ ├── raw/
+│ └── processed/
+│
+├── outputs/
+│ ├── maps/
+│ ├── figures/
+│ └── tables/
+│
+├── scripts/
+│ ├── 01_ingestion.R
+│ ├── 02_eda.R
+│ ├── 03_spatial_weights.R
+│ ├── 04_models.R
+│ └── 09_visualization.R
+│
+└── README.md
+
+
+
+---
 
 ## 🛰 Strategic Workflow & Methodology
 
