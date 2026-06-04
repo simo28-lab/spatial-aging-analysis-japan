@@ -18,48 +18,38 @@ By moving beyond standard OLS regression to **Spatial Econometric Modeling (SDM)
 ---
 ## 📁 Repository Structure
 The project follows a modular, production-ready directory layout designed for reproducibility and automated testing. All analytical outputs (plots, maps, and tables) are programmatically generated and decoupled from the source code.
+## 📂 Repository Structure
 
-```text
+The project follows a modular, production-ready directory layout designed for reproducibility and automated testing. All analytical outputs (plots, maps, and tables) are programmatically generated and decoupled from both raw data assets and source logic.
+
+# Project Structure
+
+```
 .
-├── data/
-    ├── raw/        
-    │   ├── 01_moran_scatter.png
-    │   ├── 02_residual_moran.png
-    │   ├── 03_residual_boxplot.png
-    │   └── 04_covariate_relationships.png
-    ├── processed/           
-    │   ├── 01_moran_scatter.png
-    │   ├── 02_residual_moran.png
-    │   ├── 03_residual_boxplot.png
-    │   └── 04_covariate_relationships.png
-
-
-└── outputs/                
-    ├── figures/           
-    │   ├── 01_moran_scatter.png
-    │   ├── 02_residual_moran.png
-    │   ├── 03_residual_boxplot.png
-    │   └── 04_covariate_relationships.png
-    ├── maps/              
-    │   ├── 01_aging_choropleth.png
-    │   ├── 02_density_map.png
-    │   ├── 03_lisa_map.png
-    │   └── 04_sdm_residuals.png
-    └── tables/             
-        └── moran_robustness.csv
-
-└── scripts/
-   ├── 01_moran_scatter.png
-   ├── 02_residual_moran.png
-   ├── 03_residual_boxplot.png
-   └── 04_covariate_relationships.png
-
-├── README.md 
-
----
+├── README.md                 
+├── data/                     
+│   ├── processed/            
+│   └── raw/                  
+├── outputs/                  
+│   ├── figures/              
+│   │   ├── 01_moran_scatter.png
+│   │   ├── 02_residual_moran.png
+│   │   ├── 03_residual_boxplot.png
+│   │   └── 04_covariate_relationships.png
+│   ├── maps/                
+│   │   ├── 01_aging_choropleth.png
+│   │   ├── 02_density_map.png
+│   │   ├── 03_lisa_map.png
+│   │   └── 04_sdm_residuals.png
+│   └── tables/              
+│       └── moran_robustness.csv
+└── scripts/                  
+    ├── 01_data_loading.R     
+    ├── 08_diagnostics.R      
+    └── 09_visualization.R   
+```
 
 ## 🛰 Strategic Workflow & Methodology
-
 ### 1. Geospatial Data Engineering
 A robust spatial infrastructure was built to account for Japan's unique physical geography:
 * **Terrain Impact Analysis:** Integrated Digital Elevation Models (DEM) to generate **Slope** and **Hillshade** layers. This allows for the analysis of how rugged morphology restricts urban density and service accessibility.
