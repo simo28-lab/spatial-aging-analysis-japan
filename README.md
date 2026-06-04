@@ -17,27 +17,44 @@ By moving beyond standard OLS regression to **Spatial Econometric Modeling (SDM)
 
 ---
 ## 📁 Repository Structure
-project/
-│
+The project follows a modular, production-ready directory layout designed for reproducibility and automated testing. All analytical outputs (plots, maps, and tables) are programmatically generated and decoupled from the source code.
+
+```text
+.
 ├── data/
-│ ├── raw/
-│ └── processed/
-│
-├── outputs/
-│ ├── maps/
-│ ├── figures/
-│ └── tables/
-│
-├── scripts/
-│ ├── 01_ingestion.R
-│ ├── 02_eda.R
-│ ├── 03_spatial_weights.R
-│ ├── 04_models.R
-│ └── 09_visualization.R
-│
-└── README.md
+    ├── raw/        
+    │   ├── 01_moran_scatter.png
+    │   ├── 02_residual_moran.png
+    │   ├── 03_residual_boxplot.png
+    │   └── 04_covariate_relationships.png
+    ├── processed/           
+    │   ├── 01_moran_scatter.png
+    │   ├── 02_residual_moran.png
+    │   ├── 03_residual_boxplot.png
+    │   └── 04_covariate_relationships.png
 
 
+└── outputs/                
+    ├── figures/           
+    │   ├── 01_moran_scatter.png
+    │   ├── 02_residual_moran.png
+    │   ├── 03_residual_boxplot.png
+    │   └── 04_covariate_relationships.png
+    ├── maps/              
+    │   ├── 01_aging_choropleth.png
+    │   ├── 02_density_map.png
+    │   ├── 03_lisa_map.png
+    │   └── 04_sdm_residuals.png
+    └── tables/             
+        └── moran_robustness.csv
+
+└── scripts/
+   ├── 01_moran_scatter.png
+   ├── 02_residual_moran.png
+   ├── 03_residual_boxplot.png
+   └── 04_covariate_relationships.png
+
+├── README.md 
 
 ---
 
