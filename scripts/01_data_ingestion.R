@@ -2,10 +2,10 @@
 # ================================
 # 2. DATA LOADING & SPATIAL JOIN
 # ================================
-
+library(here)
 # Load dataset and shapefile
-dati <- read_excel("C:/Users/Simona/Downloads/spatial/dataset spatial_final.xlsx")
-giappone_shp <- st_read("C:/Users/Simona/Downloads/spatial/japan_shape/gadm41_JPN_1.shp")
+dati <- read_excel(here("data", "processed", "dataset spatial_final.xlsx"))
+giappone_shp <- st_read(here("data", "processed", "gadm41_JPN_1.shp"))
 
 # Clean prefecture names for spatial join
 dati$Prefettura_Pulita <- gsub("-ken|-to|-fu|-do", "", dati$Prefetture)
