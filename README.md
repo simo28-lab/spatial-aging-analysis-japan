@@ -28,8 +28,13 @@ The project follows a modular, production-ready directory layout designed for re
 .
 ├── README.md                 
 ├── data/                     
-│   ├── processed/            
-│   └── raw/                  
+│   ├── processed/
+│   │   ├── dataset spatial_final.xlsx
+│   │   └── gadm41_JPN_1.shp        
+│   └── raw/
+│   │   ├── a205.xls
+│   │   ├── gadm41_JPN_1.prj
+│   │   └── gadm41_JPN_1.shx                                 
 ├── outputs/                  
 │   ├── figures/              
 │   │   ├── 01_moran_scatter.png
@@ -40,12 +45,20 @@ The project follows a modular, production-ready directory layout designed for re
 │   │   ├── 01_aging_choropleth.png
 │   │   ├── 02_density_map.png
 │   │   ├── 03_lisa_map.png
-│   │   └── 04_sdm_residuals.png
+│   │   ├── 04_sdm_residuals.png
+│   │   └── morphology_japan.png
 │   └── tables/              
 │       └── moran_robustness.csv
 └── scripts/                  
-    ├── 01_data_loading.R     
-    ├── 08_diagnostics.R      
+    ├── 00_libraries.R     
+    ├── 01_data_ingestion.R
+    ├── 02_data_quality.R     
+    ├── 03_spatial_weights.R
+    ├── 04_eda.R     
+    ├── 05_esda.R
+    ├── 06_models.R     
+    ├── 07_impacts.R 
+    ├── 08_diagnostics.R            
     └── 09_visualization.R   
 ```
 
