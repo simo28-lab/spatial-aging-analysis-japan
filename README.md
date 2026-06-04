@@ -24,10 +24,13 @@ A robust spatial infrastructure was built to account for Japan's unique physical
 * **Terrain Impact Analysis:** Integrated Digital Elevation Models (DEM) to generate **Slope** and **Hillshade** layers. This allows for the analysis of how rugged morphology restricts urban density and service accessibility.
 * **Data Pipeline Optimization:** Automated nomenclature harmonization and spatial joins to ensure 100% data integrity across the archipelago.
 * **Contiguity Modeling:** Structured a precise **Spatial Weight Matrix (W)**, focusing on mainland connectivity to eliminate noise from isolated island geographies.
+  
   > Note: Raw DEM raster files and intermediate GIS processing outputs are not included in this repository due to file size limitations. The final processed visualization is provided below.
   ### Terrain Morphology of Japan
 
-![Morphology Map](outputs/maps/morphology_japan.png)
+<p align="center">
+  <img src="outputs/maps/morphology_japan.png" width="500">
+</p>
 
 ### 2. Exploratory Spatial Data Analysis (ESDA)
 * **Cluster Identification:** Confirmed significant regional clustering with a **Moran’s I of 0.398** ($p < 0.001$).
