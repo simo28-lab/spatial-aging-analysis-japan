@@ -30,11 +30,13 @@ The project follows a modular, production-ready directory layout designed for re
 ├── data/                     
 │   ├── processed/
 │   │   ├── dataset spatial_final.xlsx
+│   │   ├── gadm41_JPN_1.prj
+│   │   ├── gadm41_JPN_1
+│   │   ├── gadm41_JPN_1.shx   
 │   │   └── gadm41_JPN_1.shp        
 │   └── raw/
-│   │   ├── a205.xls
-│   │   ├── gadm41_JPN_1.prj
-│   │   └── gadm41_JPN_1.shx                                 
+│   │   └──  a205.xls
+                              
 ├── outputs/                  
 │   ├── figures/              
 │   │   ├── 01_moran_scatter.png
